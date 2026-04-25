@@ -1,0 +1,16 @@
+# All master Values
+# Comma seperated values
+# First value give the field and rest the list of values for the field.
+# Each value is <id>|<display string>
+#
+ISSUE_TYPE,1|Need Feature Clarification,2|How Do I ..., 3|Unable to Proceed,4|Feature Missing,5|Inaccurate Data,6|Save Not Working,7|Field Missing,8|UI Not Intuitive,9|Miscellaneous
+ISSUE_STATUS,1|Raised,2|Accepted,3|Not Reproducible,4|More Info Needed,5|Under Analysis,6|Dev In Progress,7|Dev Fixed,8|QA Testing,9|QA Approved,10|UAT Testing,11|UAT Approved,12|Promoted to Prod,13|Closed,14|QA Reopened,15|UAT Reopened
+ISSUE_SEVERITY,1|NA,2|P1,3|P2,4|P3,5|P4
+MODULES,1|Frontdesk,2|Cashier,3|Optometrist,4|Doctor,5|Counsellor,6|Histo,7|Microbiology,8|Biochemistry,9|Diagonistics,10|EyeLasers,11|Photography,12|CL/Devices,13|Prescriptions,14|Online Consuelting,15|Injections,16|Minor Procedures,17|OR,18|IP,19|DayCare,20|MRD,21|Clinical Audit,22|PC Admin,23|Center Admin
+#
+# User Personas
+PERSONAS,1|Stakeholder,2|LVPEI ML,3|LVPEI QA,4|VM TE,5|VM BE,6|VM FE,7|VM DE,8|VM UX,9|VM DOP,10|VM MGR
+#
+# comma seperated - users of the system
+# value format: <id>|<name>|<email>|<pwd>|<access-mask>|<role>
+RESOURCES,1|Ranga Vadapalli|foobar@lvpei.com|pwd|3|1,2|Jagannadh Ganti|foobar@lvpei.com|pwd|3|1,3|Dr. Pravin Vadavalli|foobar@lvpei.com|pwd|3|1,4|Atmakuri Ramam|foobar@lvpei.com|pwd|3|1,5|Srinivas Vasi Reddy|foobar@valuemomentum.com|pwd|3|1,6|Swarup Ghosh|foobar@valuemomentum.com|pwd|3|1,7|Sridhar Kannuri|foobar@valuemomentum.com|pwd|2047|10,8|Sandeep Nanjkar|foobar@valuemomentum.com|pwd|2047|10,9|Ajay Kumar Marikal|foobar@valuemomentum.com|pwd|735|4,10|Sai Krishna Thota|foobar@valuemomentum.com|pwd|735|4,11|Neelima Bipilla|foobar@valuemomentum.com|pwd|735|4,12|Arun Sankar|foobar@valuemomentum.com|pwd|1023|7,13|Aslam Mannur|1023|7,14|Nitin Bhanudas Aher|foobar@valuemomentum.com|pwd|767|7,15|Nikita Gunasekaran|foobar@valuemomentum.com|pwd|767|7,16|Avinash Reddy Bheemavarapu|foobar@valuemomentum.com|pwd|1023|5,17|Keerthi Needanamuri|foobar@valuemomentum.com|pwd|767|5,18|Pradeep Ramadugu|foobar@valuemomentum.com|pwd|767|5,19|Sai Soumith Vajroju|foobar@valuemomentum.com|pwd|767|6,20|Prashanth Abbu|foobar@valuemomentum.com|pwd|767|5,21|Janibasha Shaik|foobar@valuemomentum.com|pwd|767|6,22|Saiteja Parepally|foobar@valuemomentum.com|pwd|767|6,23|Keertana Paramesh|foobar@valuemomentum.com|pwd|767|5,24|RamkumarVaratharaj|foobar@valuemomentum.com|pwd|767|8,25|Ramakrishna Ambati|foobar@valuemomentum.com|pwd|767|6,26|Lakshmireddy Singareddy|foobar@valuemomentum.com|pwd|767|9,27|Jaikumar Subramanyam Gopal|foobar@valuemomentum.com|pwd|767|5,28|Shanmukha Kondaveti|foobar@valuemomentum.com|pwd|767|5,29|Srinivas Chanda|foobar@valuemomentum.com|pwd|767|8,30|Test_mgr|foobar@valuemomentum.com|pwd|2047|10,31|Test_vm_qa|foobar@valuemomentum.com|pwd|735|4,32|Test_lvpei_qa|foobar@valuemomentum.com|pwd|159|3,33|Test_alwal_lead|foobar@valuemomentum.com|pwd|31|2,34|Test_stakeholder|foobar@valuemomentum.com|pwd|3|1,35|Test_vm_dev|foobar@valuemomentum.com|pwd|767|5,36|Test_vm_tech_mgr|foobar@valuemomentum.com|pwd|1023|10,37|Lekha|foobar@valuemomentum.com|pwd|159|3,38|Urmila|foobar@valuemomentum.com|pwd|159|3,39|Waasim|foobar@valuemomentum.com|pwd|159|3,40|Alwal Module Lead 1|foobar@lvpei.com|pwd|31|2,41|Alwal Module Lead 2|foobar@lvpei.com|pwd|31|2,42|Alwal Module Lead 3|foobar@lvpei.com|pwd|31|2
