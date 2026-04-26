@@ -1,16 +1,52 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Login from "./components/Login.jsx";
+import Main from "./components/Main.jsx";
+import LwTrackerContext from "./store/LwTrackerContext.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [loggedInUser, setLoggedInUser] = useState({});
+  const [resources, setResources] = useState([]);
+  const [issueTypes, setIssueTypes] = useState([]);
+  const [issueStatuses, setIssueStatuses] = useState([]);
+  const [issueSeverities, setIssueSeverities] = useState([]);
+  const [modules, setModules] = useState([]);
+
+  const [user, setUser] = useState({});
+  const [searchData, setSearchData] = useState({});
 
 
+  const lwTrackerContextValue = {
+    master: {
+      resources: resources,
+      issueType: issueTypes,
+      issueStatus: issueStatuses,
+      issueSeverity: issueSeverities,
+      modules: modules
+    },
+    data: {
+      user: user,
+      searchData: searchData
+    },
+    actions: {
+      setIsLoggedIn: setIsLoggedIn,
+      setLoggedInUser: setLoggedInUser,
+      setResources: setResources,
+      setIssueTypes: setIssueTypes,
+      setIssueStatuses: setIssueStatuses,
+      setIssueSeverities: setIssueSeverities,
+      setModules: setModules,
+      setUser: setUser,
+      setSearchData: setSearchData
+    }
+
+  }
   return (
-    <Login/>
+    <LwTrackerContext value={lwTrackerContextValue}>
+      {!isLoggedIn && <Login/>}
+      {isLoggedIn && <Main/>}
+    </LwTrackerContext>
   )
 }
 

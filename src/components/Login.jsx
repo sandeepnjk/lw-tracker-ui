@@ -1,9 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, {use} from 'react';
+import {login} from "../http.js";
+import LwTrackerContext from "../store/LwTrackerContext.jsx";
 
 const Login = props => {
+ //setIsLoggedIn: setIsLoggedIn,
+  //setLoggedInUser: setLoggedInUser
+  /*
+  {
+  id: 8,
+  name: "Sandeep Nanajkar",
+  email: "sandeepnjk@gmail.com",
+  role: 10,
+  token: "thsisamocktoken",
+  mask:1023,
+}
+  * */
+  const {actions: {setIsLoggedIn: setIsLoggedIn, setLoggedInUser: setLoggedInUser}} =use( LwTrackerContext);
   const handleLogin = () => {
-
+    const performLogin = async () => {
+      const data = await login(true);
+      console.log(`logged in user data ${data}`)
+      setIsLoggedIn((prev) => data.id !== undefined && data.id !== null && data.id > 0);
+      setLoggedInUser((prev) => data);
+    }
+    performLogin();
   }
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen">
@@ -33,8 +53,9 @@ const Login = props => {
           className="border px-4 py-2 rounded"
         />
       </div>
-      <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
-              onClick={}>Login</button>
+      <button type="button"
+              className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
+              onClick={handleLogin}>Login</button>
     </div>
   );
 };
