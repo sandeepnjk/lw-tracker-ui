@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from "./Header.jsx";
 
 const Main = props => {
   return (
     <div>
-      This is the main page
+      <Header/>
     </div>
   );
 };
