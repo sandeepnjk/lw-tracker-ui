@@ -6,18 +6,19 @@ import {faPlus} from "@fortawesome/free-solid-svg-icons";
 
 const Header = props => {
   return (
-    <div className="flex flex-row bg-stone-600 text-white text-center">
-      <div className="justify-start w-1/2">
+    <div className="flex flex-row items-center bg-stone-600 text-white">
+      <div className="flex justify-start w-1/2 pl-2">
+        <p className="text-white text-center text-2xl">Eyesmart Issue Tracker</p>
+      </div>
+      <div className="flex justify-end w-1/2 ml-auto items-center gap-3 pr-2">
         <span>
-          <p className="text-white text-center text-2xl">Eyesmart Issue Tracker</p>
+          <button type="button"
+                  className="hover:bg-stone-500 text-white font-bold my-2 p-2 rounded">
+            <FontAwesomeIcon icon={faPlus}/>New Issue
+          </button>
         </span>
+        <FontAwesomeIcon icon={faUser}/>
       </div>
-      <div className="justify-end w-1/2 ml-auto items-center">
-        <span className="px-2 h-full"><FontAwesomeIcon icon={faUser}/></span>
-        <span className="px-2 h-full"><FontAwesomeIcon icon={faPlus}/></span>
-        <span className="px-2 h-full">New Issue</span>
-      </div>
-
     </div>
   );
 };
